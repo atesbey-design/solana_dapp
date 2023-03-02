@@ -10,13 +10,13 @@ import {
   PublicKey,
 } from '@solana/web3.js';
 
-const HelloWorld: FC = () => {
+const Template: FC = () => {
   const hoverTrColor = useColorModeValue('gray.100', 'gray.700');
   const { publicKey, sendTransaction } = useWallet();
   const [status, setStatus] = useState('');
   const [txLogs, setTxLogs] = useState<string[]>(['']);
 
-  const programId = '3Adih9H8CheKTKfmmUYtr8cksbwoxvhWzsdupK6MfJAX';
+  const programId = '4jVq3U4r1cyroJjDSSXyvEVf5CiptU8WcavR3JU1Qq9J';
 
   const connection = new Connection(clusterApiUrl('devnet'));
 
@@ -113,4 +113,4 @@ const HelloWorld: FC = () => {
   );
 };
 
-export default HelloWorld;
+export default Template;
